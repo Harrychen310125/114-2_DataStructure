@@ -1,5 +1,5 @@
 void printPairs(const vector<int>& arr) {
-int stepcount = 0;
+int stepcount = 0;//初始化stepcount
 stepcount ++;//loop initialization (1step)
 for (int i = 0; i < arr.size(); i++) {
   stepcount ++;//迴圈條件判斷(1step)
