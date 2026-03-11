@@ -20,8 +20,11 @@ step++;//初始化迴圈(1step)
 for (int i = 0; i < arr.size(); i++) {
 step ++;//陣列存取(1step)
 if (arr[i] == target) {
+
 count++;
 }
 }
+step ++;//
 return count;
 }
+//
