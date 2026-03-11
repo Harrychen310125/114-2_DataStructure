@@ -9,4 +9,16 @@ stepcounter ++;//i++(step1)
 }
 stepcounter ++;//跳出迴圈(step1)
 }
-//1(initial)+4*n(
+//1(initial)+4*n(for loop operation)+1(跳出迴圈)
+//=4n+2
+
+int countElement(const vector<int>& arr, int target) {
+int step = 0;
+int count = 0;
+for (int i = 0; i < arr.size(); i++) {
+if (arr[i] == target) {
+count++;
+}
+}
+return count;
+}
