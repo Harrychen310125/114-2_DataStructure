@@ -2,7 +2,7 @@ void copyArray(const vector<int>& source, vector<int>& dest) {
 int stepcount = 0;//初始化stepcount
 stepcounter ++;//初始化迴圈(step1)
 for (int i = 0; i < source.size(); i++) {
-stepcounter ++;//陣列存取(step1)
+stepcounter ++;//陣列存取(1step)
 dest[i] = source[i];  stepcount = stepcount+2;
   //2step(陣列存取+assignment)
 stepcounter ++;//i++(step1)
@@ -15,8 +15,10 @@ stepcounter ++;//跳出迴圈(step1)
 int countElement(const vector<int>& arr, int target) {
 int step = 0;//初始化step
 int count = 0;
-step++;//
+step++;//變數初始化(1step)
+step++;//初始化迴圈(1step)
 for (int i = 0; i < arr.size(); i++) {
+step ++;//陣列存取(1step)
 if (arr[i] == target) {
 count++;
 }
